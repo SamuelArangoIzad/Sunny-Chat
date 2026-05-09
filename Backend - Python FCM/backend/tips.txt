@@ -1,0 +1,56 @@
+sudo systemctl status postgresql
+
+sudo systemctl start postgresql
+
+sudo systemctl enable postgresql
+
+
+PASSWORD = postgres
+
+
+psql -h localhost -U postgres -p 5434
+
+
+
+//FIRE BASE
+https://console.firebase.google.com/u/0/project/backend-examn/settings/serviceaccounts/adminsdkhttps://console.firebase.google.com/u/0/project/backend-examn/settings/serviceaccounts/adminsdk
+
+
+                                                                         
+┌──(venv)─(s006sasamuel㉿ssa006Samuel)-[~/Descargas/Parcial Final/backend/backend]
+└─$ python3 -m app.test_fcm
+MENSAJE ENVIADO:
+projects/backend-examn/messages/0:1778282241155330%dd28a90ddd28a90d
+                                                                         
+┌──(venv)─(s006sasamuel㉿ssa006Samuel)-[~/Descargas/Parcial Final/backend/backend]
+└─$ 
+
+
+
+
+MATAR PROCESO ADB
+
+┌──(s006sasamuel㉿ssa006Samuel)-[~/Descargas/Parcial Final/exam_app/exam_app]
+└─$ sudo lsof -i :5037
+[sudo] contraseña para s006sasamuel: 
+COMMAND  PID USER  FD   TYPE DEVICE SIZE/OFF NODE NAME
+java    1318 root 470u  IPv6  16934      0t0  TCP *:5037 (LISTEN)
+                                                                                                             
+┌──(s006sasamuel㉿ssa006Samuel)-[~/Descargas/Parcial Final/exam_app/exam_app]
+└─$ sudo kill -9 1318
+                                                                                                             
+┌──(s006sasamuel㉿ssa006Samuel)-[~/Descargas/Parcial Final/exam_app/exam_app]
+└─$ sudo lsof -i :5037
+                                                                                                             
+┌──(s006sasamuel㉿ssa006Samuel)-[~/Descargas/Parcial Final/exam_app/exam_app]
+└─$ adb start-server
+* daemon not running; starting now at tcp:5037
+* daemon started successfully
+                                                                                                             
+┌──(s006sasamuel㉿ssa006Samuel)-[~/Descargas/Parcial Final/exam_app/exam_app]
+└─$ adb devices     
+List of devices attached
+
+                                                                                                             
+┌──(s006sasamuel㉿ssa006Samuel)-[~/Descargas/Parcial Final/exam_app/exam_app]
+└─$ 

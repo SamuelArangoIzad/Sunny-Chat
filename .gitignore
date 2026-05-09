@@ -1,0 +1,11 @@
+*.zip
+venv/
+.venv/
+__pycache__/
+build/
+uploads/
+*.pyc
+google-services.json
+firebase_options.dart
+serviceAccountKey.json
+firebase_key.json
